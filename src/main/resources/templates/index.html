@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" th:href="@{/style.css}">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Emoji Finder</title>
+</head>
+<body>
+    <header>
+        <p id="copied">COPIED!</p>
+
+        <div id="navbar">
+            <h1 id="title" class="display-6">🔍 EmojiFinder</h1>
+            <h1 id="githubLinkText" class="display-6" onclick="githubRepoLocation()">GitHub</h1>
+            <i class="bi bi-github" id="githubLinkLogo" onclick="githubRepoLocation()"></i>
+        </div>
+    </header>
+
+    <main>
+        <div id="mainText">
+            <h1 id="mainTitle" class="display-1">Emoji Finder</h1>
+            <h1 id="mainSmallerTitle" class="display-6">Make emoji searching easier</h1>
+        </div>
+
+        <div id="inputSearchEmoji">
+            <div id="searchEmojis">
+                <button id="searchEmojiButton" onclick="searchEmoji()"><i class="bi bi-search"></i></button>
+                <input type="text" id="inputText" placeholder="Search Emojis" maxlength="30" onfocus="outlineAdd()" onblur="removeOutline()">
+            </div>
+            <button id="randomEmojiButton" onclick="searchEmoji('randomButton123456')">🎲</button>
+        </div>
+
+        <div id="responseEmojis">
+            <div id="responseEmojis2">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h1 id="footerTitle" class="display-3">Hot Emojis</h1>
+        <div id="emojiList">
+            <div id="emojiList2">
+                <p class="display-3 emojiBlock">💦</p>
+                <p class="display-3 emojiBlock">😱</p>
+                <p class="display-3 emojiBlock">😡</p>
+                <p class="display-3 emojiBlock">😩</p>
+                <p class="display-3 emojiBlock">🫣</p>
+                <p class="display-3 emojiBlock">🥵</p>
+                <p class="display-3 emojiBlock">😤</p>
+                <p class="display-3 emojiBlock">🥴</p>
+                <p class="display-3 emojiBlock">🍑</p>
+                <p class="display-3 emojiBlock">😏</p>
+                <p class="display-3 emojiBlock">🤯</p>
+                <p class="display-3 emojiBlock">🥶</p>
+                <p class="display-3 emojiBlock">🤪</p>
+                <p class="display-3 emojiBlock">🤩</p>
+                <p class="display-3 emojiBlock">🤣</p>
+                <p class="display-3 emojiBlock">🫠</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script th:src="@{/script.js}"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

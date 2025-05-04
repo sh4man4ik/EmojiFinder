@@ -1,0 +1,218 @@
+body {
+    padding: 0;
+    margin: 0;
+    color: black;
+    background-color: white;
+
+    font-family: "Jua", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.bi bi-github {
+    color: black;
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+#githubLinkText {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#githubLinkLogo {
+    cursor: pointer;
+    margin-left: auto;
+    font-size: clamp(24px, 5vw, 36px);
+    padding-right: 12px;
+}
+
+#title {
+    cursor: default;
+    margin-right: auto;
+}
+
+#mainText {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#mainSmallerTitle {
+    color: #797979;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#inputSearchEmoji {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+#inputText {
+    border: 0;
+    outline: none;
+    font-size: clamp(20px, 5vw, 32px);
+    background-color: #F0F0F0;
+    padding-left: 15px;
+    width:100%;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#searchEmojiButton {
+    border: 0;
+    font-size: clamp(20px, 5vw, 32px);
+    background-color: #F0F0F0;
+    padding-top: 5px;
+    padding-left: 15px;
+    width: auto;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+@media (max-width: 300px) {
+    #searchEmojiButton {
+        padding-left: 10px;
+    }
+}
+
+#searchEmojis {
+    border: 0;
+    display: flex;
+    background-color: #F0F0F0;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 70%;
+    max-width: 600px;
+}
+
+#randomEmojiButton {
+    font-size: clamp(20px, 6vw, 32px);
+    background-color: #F0F0F0;
+    border: 0;
+    border-radius: 7px;
+    max-width: 60px;
+    width: 15%;
+    aspect-ratio: 1 / 1;
+    margin-left: 10px;
+}
+#randomEmojiButton:hover {
+    background-color: #e3e3e3;
+}
+
+#footerTitle {
+    text-align: center;
+}
+
+.emojiBlock {
+    margin: 10px;
+    padding: 8px 6px 1px 6px;
+    border: 3px solid #F0F0F0;
+    border-radius: 7px;
+    max-width: 120px;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: clamp(34px, 8.5vw, 64px);
+    background-color: white;
+}
+
+.emojiBlock:hover {
+    background-color: #F0F0F0;
+}
+
+#emojiList, #responseEmojis {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#emojiList2, #responseEmojis2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 2% 30px 2%;
+    max-width: 1100px;
+    justify-content: center;
+}
+
+#responseEmojis {
+    margin-top: 40px;
+}
+
+
+#copied {
+    display: none;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: clamp(14px, 3vw, 24px);
+    background-color: #cfcfcf;
+    padding: 5px 10px;
+    border-radius: 7px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0s 0.25s;
+}
+#copied.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.25s ease, visibility 0s 0s;
+}
+
+/*Mobile*/
+@media (max-width: 1023px) {
+    #githubLinkText {
+        display: none;
+    }
+    #githubLinkLogo {
+        display: block;
+        padding-top: 3px;
+    }
+    #navbar {
+        padding: 20px;
+    }
+    #title {
+        padding-top: 8px;
+    }
+    #footerTitle {
+        margin-top: 100px;
+    }
+}
+
+/*PC*/
+@media (min-width: 1024px) {
+    #githubLinkText {
+        display: block;
+    }
+    #githubLinkLogo {
+        display: none;
+    }
+    #navbar {
+        padding: 30px;
+    }
+    #title {
+        padding-top: 11px;
+        padding-left: 7px;
+    }
+    #githubLinkText {
+        padding-top: 11px;
+        padding-right: 14px;
+    }
+    #footerTitle {
+        margin-top: 150px;
+    }
+}
