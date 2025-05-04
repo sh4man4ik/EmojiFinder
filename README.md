@@ -1,3 +1,6 @@
+# EmojiFinder
+![Screenshot](https://github.com/sh4man4ik/EmojiFinder/raw/main/Screenshot.png)
+
 # Source code
 The source code files, namely are located in the *src* folder.
 
