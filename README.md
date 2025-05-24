@@ -2,7 +2,7 @@
 ![Screenshot](https://github.com/sh4man4ik/EmojiFinder/raw/main/Screenshot.png)
 
 # Source code
-The source code files are located in the *src* folder.
+The source code files are located in the *src* folder. There is also a Dockerfile for Docker.
 
 # What is EmojiFinder?
 EmojiFInder is a site that helps you find emoji by keywords.
